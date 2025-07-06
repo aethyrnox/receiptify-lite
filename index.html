@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aethyrnox - Music Receipt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- About Me Button -->
+  <a href="aboutme.html">
+    <button class="top-right-button">About Me</button>
+  </a>
+
+  <div class="page-wrapper">
+    <header>
+      <h1>Aethyrnox - Music Receipt✨</h1>
+      <p>❤️Here your order! #<span id="order-id"></span></p>
+    </header>
+
+    <main>
+      <section id="auth">
+        <button onclick="authorizeSpotify()">Login with Spotify</button>
+      </section>
+
+      <section id="receipt" style="display:none;">
+        <div class="receipt" id="receipt-content">
+          <h2>✨ Your Top Tracks ✨</h2>
+          <ul id="track-list"></ul>
+          <p class="footer">Thanks for listening 💙</p>
+        </div>
+        <div class="btn-group">
+          <button onclick="downloadReceipt()">Download Receipt</button>
+          <button onclick="logout()">Logout</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-note">
+      Created by ❤️ 
+      <a href="https://www.youtube.com/@bangmattaja" target="_blank">
+        Rahmat
+      </a>
+    </footer>
+  </div>
+ 
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
