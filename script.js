@@ -79,7 +79,7 @@ async function handleRedirect() {
 
 function logout() {
   localStorage.removeItem("access_token");
-  window.location.href = "index.html";
+  window.location.href = "https://receiptynox.netlify.app";
 }
 
 function generateOrderId() {
