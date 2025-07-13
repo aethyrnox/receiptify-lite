@@ -1,5 +1,5 @@
 const clientId = "489e0479f85e42548d4dcaddcd0d3dfb";
-const redirectUri = "https://aethyrnox.github.io/receiptify-lite/";
+const redirectUri = "https://receiptynox.netlify.app";
 const scopes = "user-top-read";
 
 function base64encode(str) {
